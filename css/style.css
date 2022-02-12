@@ -22,6 +22,8 @@ html {
 body {
   font-family: "Raleway", sans-serif;
   background-image: url("../images/bg-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 img {
@@ -112,7 +114,6 @@ img {
     border-radius: 50%;
     background-color: var(--color-pale-blue);
     margin-left: 94%;
-    /* margin: 2px 2px 2px 93%; */
 }
 
 .values {
