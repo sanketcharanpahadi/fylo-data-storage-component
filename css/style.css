@@ -28,6 +28,10 @@ body {
   height: 100vh;
 }
 
+main {
+  height: 98%;
+}
+
 .container {
   width: 90%;
   max-width: 90%;
