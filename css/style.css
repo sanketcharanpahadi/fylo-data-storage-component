@@ -15,14 +15,13 @@
   box-sizing: border-box;
 }
 
-html {    
+html {
   font-size: 62.5%;
 }
 
-
 body {
-  font-family: 'Raleway', sans-serif;
-  background: url('../images/bg-mobile.png'), var(--color-dark-blue);
+  font-family: "Raleway", sans-serif;
+  background: url("../images/bg-mobile.png"), var(--color-very-dark-blue);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -32,11 +31,6 @@ body {
 .container {
   width: 90%;
   max-width: 90%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  /* padding: 0 .1rem;    */
 }
 
 .fylo {
@@ -49,7 +43,7 @@ body {
   margin-bottom: 3rem;
 }
 
-.feature img{
+.feature img {
   border: 13px solid var(--color-very-dark-blue);
   background-color: var(--color-very-dark-blue);
   border-radius: 1rem;
@@ -100,12 +94,13 @@ body {
 .used-filled {
   height: 13px;
   width: 72%;
-  background-image: linear-gradient(to right, var(--color-primary-one), var(--color-primary-two));
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  background-image: linear-gradient(
+    to right,
+    var(--color-primary-one),
+    var(--color-primary-two)
+  );
   transform: translate(-68%, -50%);
-  border-radius: 1rem
+  border-radius: 1rem;
 }
 
 .circle {
@@ -153,4 +148,55 @@ body {
   text-transform: uppercase;
   color: var(--color-grayish-blue);
   font-weight: 600;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 700px) {
+  body {
+    background: url("../images/bg-desktop.png"), var(--color-very-dark-blue);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 300px;
+    background-size: 104%;
+    background-position-x: -51px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  .fylo {
+    width: 30%;
+  }
+
+  .storage {
+    width: 47%;
+    padding: 4rem 4rem 2rem 4rem;
+    margin-top: 5.5rem;
+  }
+
+  .used {
+    text-align: left;
+    margin-bottom: 1.5rem;
+  }
+
+  .values span:not(:last-child) {
+    margin-right: 84%;
+  }
+
+  .left {
+    top: 10%;
+    left: 72%;
+  }
 }
