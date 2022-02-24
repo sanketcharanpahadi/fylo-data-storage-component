@@ -21,12 +21,11 @@ Users should be able to:
 - View the optimal layout for the site depending on their device's screen size
 
 ### Screenshot
-
 ![](./images/sc.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/mobilefirst-approach-w_xum7HKt](https://www.frontendmentor.io/solutions/mobilefirst-approach-w_xum7HKt)
 - Live Site URL: [https://sanketcharanpahadi.github.io/fylo-data-storage-component/](https://sanketcharanpahadi.github.io/fylo-data-storage-component/)
 
 ## My process
