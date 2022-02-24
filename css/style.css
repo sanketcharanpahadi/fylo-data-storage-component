@@ -123,10 +123,8 @@ main {
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
-}
-
-.values span:not(:last-child) {
-  margin-right: 69%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .left {
@@ -154,11 +152,24 @@ main {
   font-weight: 600;
 }
 
+.left::after {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  right: -12.5%;
+  bottom: -14%;
+  border-style: solid;
+  border-width: 0px 0px 40px 40px;
+  border-color: #fff transparent;
+  transform: rotate(135deg);
+  visibility: hidden;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
 }
-
 
 .attribution a {
   color: hsl(228, 45%, 44%);
@@ -202,5 +213,9 @@ main {
   .left {
     top: 10%;
     left: 72%;
+  }
+
+  .left::after {
+    visibility: visible;
   }
 }
